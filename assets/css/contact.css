@@ -1,0 +1,289 @@
+/*
+  - First, css reset
+  - Second, global classes
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+
+body {
+  line-height: 1;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: url("../img/background.png");
+  background-size: 5%;
+  background-color: #564f6f;
+}
+
+.wrapper {
+  height: 600px;
+  width: 100%;
+}
+
+.pageContainer {
+  height: 800px;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  top: 0;
+  font-family: "Acme", cursive;
+}
+
+header #linkContainer {
+  display: block;
+  width: 815px;
+  height: 100%;
+  opacity: 1;
+  margin: auto;
+  color: #908aa8;
+}
+
+#linkContainer a {
+  display: inline-block;
+  font-size: 30px;
+  margin: 20px;
+  color: inherit;
+}
+
+.current {
+  text-decoration: underline;
+  cursor: default;
+}
+
+#menuIcon {
+  margin: auto;
+  width: 35px;
+}
+
+#menuIcon div {
+  width: 35px;
+  height: 5px;
+  background-color: #908aa8;
+  margin: 6px 0;
+  border-radius: 1px;
+}
+
+footer {
+  margin-top: auto;
+  bottom: 0;
+}
+
+#footerTop {
+  background-color: #2f2b3b;
+  height: 150px;
+  width: 100%;
+  margin-top: 550px;
+  border-top: 8px solid #a4a1c4;
+}
+
+#socialLinks {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 100px;
+  margin-left: 50px;
+  margin-top: 50px;
+  color: #d1d7e0;
+}
+
+#footLinkContainer {
+  width: 450px;
+  margin: auto;
+  margin-top: 45px;
+}
+
+#footLinkContainer ul {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+#footLinkContainer li {
+  display: block;
+  margin: 0px 5px 10px 5px;
+  color: #d1d7e0;
+  font-size: 20px;
+}
+
+#footerBottom {
+  width: 100%;
+  height: 70px;
+  background-color: #3b364a;
+  bottom: 0;
+}
+
+#footerBottom div {
+  font-size: 15px;
+  color: #908aa8;
+  width: 370px;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*    If I have time
+#footerBottom div:nth-of-type(2) {
+  font-size: 13px;
+  width: 200px;
+  float: right;
+  padding-top: 0px;
+  margin-top: -30px;
+  margin-right: 15px;
+}
+
+#miniLogoContainer {
+  float: left;
+  max-width: 70px;
+  display: block;
+  background-color: yellow;
+}
+#miniP {
+  height: 30px;
+  width: 30px;
+}
+#miniS {
+  height: 30px;
+  width: 30px;
+}
+*/
+input, textarea {
+  border-radius: 5px;
+}
+
+form {
+  margin-top: 100px;
+}
+form #contactInfo {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  color: #d1d7e0;
+}
+form #contactInfo #columnContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+form #contactInfo .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+  height: 300px;
+  text-align: center;
+  font-size: 30px;
+  color: #2f2b3b;
+}
+form #contactInfo .column label {
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  color: #d1d7e0;
+}
+form #contactInfo .column input {
+  height: 30px;
+  background-color: #463f5a;
+  border: 2px #908aa8 solid;
+  padding: 5px;
+}
+form #contactInfo .column input::placeholder {
+  font-size: 16px;
+  color: #d1d7e0;
+}
+form #bottomContact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 280px;
+  margin: auto;
+  margin-top: 50px;
+}
+form #bottomContact #leftContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+}
+form #bottomContact #leftContact label {
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  color: #d1d7e0;
+}
+form #bottomContact #leftContact textarea {
+  width: 100%;
+  height: 200px;
+  background-color: #463f5a;
+  border: 2px #908aa8 solid;
+}
+form #bottomContact #leftContact textarea::placeholder {
+  font-size: 20px;
+  color: #d1d7e0;
+}
+form #bottomContact #rightContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+}
+form #bottomContact #rightContact p {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 10px;
+  color: #d1d7e0;
+}
+form #bottomContact #rightContact button {
+  width: 50%;
+  background-color: #463f5a;
+  color: #d1d7e0;
+  border-color: #908aa8;
+  border-radius: 5px;
+  padding: 20px;
+  margin: auto;
+}
+
+/*# sourceMappingURL=contact.css.map */

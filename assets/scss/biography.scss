@@ -1,0 +1,88 @@
+/*
+  CONTENTS:
+    - Header
+    - My name and initials
+    - Overview of whole website in three groups
+    - My participation in the r2h program, written like its code
+    - Footer
+*/
+
+/*
+  COLORS:
+    - Dark Purple Grey: #463f5a
+    - Purple Grey: #564f6f
+    - Lighter Purple Grey: #746c93
+    - Even Lighter Purple Grey: #908aa8
+    - Dark Grey: #2d283e
+    - Grey: #4c495d
+    - Light Grey: #d1d7e0
+
+*/
+
+/*
+section {
+  background-color: yellow;
+}
+*/
+
+//Globals
+@import 'partials/globals/reset';
+@import 'partials/globals/colors';
+@import 'partials/globals/defaults';
+
+
+//Components
+@import 'partials/components/header';
+@import 'partials/components/footer';
+
+
+#columnContainer {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  /*background-color: blue;*/
+}
+#leftColumn {
+  display: inline-block;
+  margin-top: 100px;
+  width: 40%;
+  height: 100%;
+}
+#rightColumn {
+  width: 60%;
+  height: 100%;
+  float: right;
+}
+#topLeft {
+  width: 100%;
+  height: 40%;
+}
+#bottomLeft {
+  width: 100%;
+  height: 50%;
+}
+#right {
+  width: 90%;
+  height: 100%;
+}
+#bioTitle {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 230px;
+  width: 95%;
+  margin: auto;
+  top: 0;
+  color: #463f5a;
+}
+#bioImg {
+  width: 280px;
+  margin-left: 80px;
+  margin-top: 120px;
+  border: 5px solid #463f5a;
+}
+#bioText {
+  text-align: center;
+  font-size: 28px;
+  padding-top: 130px;
+  padding-left: 50px;
+  color: #908aa8;
+}

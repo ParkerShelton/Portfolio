@@ -1,0 +1,125 @@
+/*
+  CONTENTS:
+    - Header
+    - My name and initials
+    - Overview of whole website in three groups
+    - My participation in the r2h program, written like its code
+    - Footer
+*/
+
+
+//Globals
+@import 'partials/globals/reset';
+@import 'partials/globals/colors';
+@import 'partials/globals/defaults';
+
+
+//Components
+@import 'partials/components/header';
+@import 'partials/components/footer';
+
+
+
+/*-----------------| Name and Initials |-----------------*/
+.wrapper:nth-of-type(1) {
+  height: 800px;
+  width: 100%;
+}
+#nameContainer {
+  position: absolute;
+  width: 75%;
+  margin: auto;
+  margin-top: 18%;
+  margin-left: 11%;
+}
+#pIMG, #sIMG {
+  height: 200px;
+}
+#pIMG {
+  float: left;
+}
+#sIMG {
+  float: right;
+}
+
+#names {
+  display: block;
+  width: 500px;
+  height: 200px;
+  margin: auto;
+  padding-top: 30px;
+}
+#divider {
+  width: 100%;
+  height: 5px;
+  background-color: $lightPurple;
+}
+#firstName, #lastName {
+  font-family: 'Yellowtail', cursive;
+  font-size: 60px;
+  margin: 10px;
+  color: $lighterPurple;
+}
+#firstName {
+  text-align: left;
+  padding-left: 30px; 
+}
+#lastName {
+  text-align: right;
+  padding-right: 30px;
+}
+
+
+/*-----------------| 3 Group Overview |-----------------*/
+#centerContainer {
+  width: 98%;
+  margin: auto;
+}
+.descContainer {
+  display: inline-block;
+  height: 450px;
+  width: 300px;
+  margin: 50px;
+  margin-left: 100px;
+  vertical-align: top;
+}
+.descTitle {
+  font-family: 'Work Sans', sans-serif;
+  color: $darkPurple;
+  font-size: 70px;
+  width: 200px;
+  margin: auto;
+}
+.descText {
+  color: $lighterPurple;
+  text-align: center;
+  font-size: 35px;
+  margin-top: 40px;
+}
+
+
+/*-----------------| Code of Particiation |-----------------*/
+#r2hTitle{
+  z-index: -10;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 350px;
+  opacity: 0.5;
+  color: $darkPurple;
+  width: 800px;
+  margin: auto;
+}
+#codeContainer {
+  width: 770px;
+  margin: auto;
+  background-color: $darkPurple;
+  padding: 25px;
+  padding-top: 30px;
+  border: 5px solid #a4a1c4;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+#codeContainer pre, p {
+  font-size: 25px;
+  color: $lightGrey;
+}
+

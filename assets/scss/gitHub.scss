@@ -1,0 +1,88 @@
+
+//Globals
+@import 'partials/globals/reset';
+@import 'partials/globals/colors';
+@import 'partials/globals/defaults';
+
+
+//Components
+@import 'partials/components/header';
+@import 'partials/components/footer';
+
+
+
+#projectContainer {
+  overflow: hidden;
+
+  h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    color: $darkerPurple;
+    text-align: center;
+  }
+
+  .project {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    margin-top: 70px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    .imgContainer {
+      width: 100%;
+      margin-top: 50px;
+
+
+      h2 {
+        font-size: 45px;
+        color: $darkerPurple;
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        width: 50%;
+        margin: auto;
+        margin-top: 20px;
+      }
+    }
+
+    p {
+      width: 80%;
+      margin: auto;
+      margin-top: 20px;
+      font-size: 25px;
+      text-align: center;
+      color: $darkerPurple;
+    }
+  }
+
+}
+
+
+#centerGit {
+  width: 100%;
+  
+  #gitHubContainer {
+    display: /*inline-*/flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    
+    a {
+      position: absolute;
+      font-size: 35px;
+      color: $lightGrey;
+      width: 300px;
+      text-align: center;
+      margin: auto;
+    }
+    img {
+      width: 300px;
+      margin: auto;
+    }
+  }
+}

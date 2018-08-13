@@ -1,0 +1,80 @@
+footer {
+  margin-top: auto;
+  bottom: 0;
+}
+
+#footerTop {
+  background-color: #2f2b3b;
+  height: 150px;
+  width: 100%;
+  margin-top: 550px;
+  border-top: 8px solid #a4a1c4;
+}
+
+#socialLinks {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 100px;
+  margin-left: 50px;
+  margin-top: 50px;
+  color: #d1d7e0;
+}
+
+#footLinkContainer {
+  width: 450px;
+  margin: auto;
+  margin-top: 45px;
+
+}
+#footLinkContainer ul {
+  display: inline-block;
+  margin-left: 50px;
+}
+#footLinkContainer li {
+  display: block;
+  margin: 0px 5px 10px 5px;
+  color: #d1d7e0;
+  font-size: 20px;
+}
+
+#footerBottom {
+  width: 100%;
+  height: 70px;
+  background-color: #3b364a;
+  bottom: 0;
+}
+#footerBottom div {
+  font-size: 15px;
+  color: #908aa8;
+  width: 370px;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*    If I have time
+#footerBottom div:nth-of-type(2) {
+  font-size: 13px;
+  width: 200px;
+  float: right;
+  padding-top: 0px;
+  margin-top: -30px;
+  margin-right: 15px;
+}
+
+#miniLogoContainer {
+  float: left;
+  max-width: 70px;
+  display: block;
+  background-color: yellow;
+}
+#miniP {
+  height: 30px;
+  width: 30px;
+}
+#miniS {
+  height: 30px;
+  width: 30px;
+}
+*/

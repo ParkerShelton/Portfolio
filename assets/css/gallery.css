@@ -1,0 +1,337 @@
+/*
+  - First, css reset
+  - Second, global classes
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+
+body {
+  line-height: 1;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: url("../img/background.png");
+  background-size: 5%;
+  background-color: #564f6f;
+}
+
+.wrapper {
+  height: 600px;
+  width: 100%;
+}
+
+.pageContainer {
+  height: 800px;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  top: 0;
+  font-family: "Acme", cursive;
+}
+
+header #linkContainer {
+  display: block;
+  width: 815px;
+  height: 100%;
+  opacity: 1;
+  margin: auto;
+  color: #908aa8;
+}
+
+#linkContainer a {
+  display: inline-block;
+  font-size: 30px;
+  margin: 20px;
+  color: inherit;
+}
+
+.current {
+  text-decoration: underline;
+  cursor: default;
+}
+
+#menuIcon {
+  margin: auto;
+  width: 35px;
+}
+
+#menuIcon div {
+  width: 35px;
+  height: 5px;
+  background-color: #908aa8;
+  margin: 6px 0;
+  border-radius: 1px;
+}
+
+footer {
+  margin-top: auto;
+  bottom: 0;
+}
+
+#footerTop {
+  background-color: #2f2b3b;
+  height: 150px;
+  width: 100%;
+  margin-top: 550px;
+  border-top: 8px solid #a4a1c4;
+}
+
+#socialLinks {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 100px;
+  margin-left: 50px;
+  margin-top: 50px;
+  color: #d1d7e0;
+}
+
+#footLinkContainer {
+  width: 450px;
+  margin: auto;
+  margin-top: 45px;
+}
+
+#footLinkContainer ul {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+#footLinkContainer li {
+  display: block;
+  margin: 0px 5px 10px 5px;
+  color: #d1d7e0;
+  font-size: 20px;
+}
+
+#footerBottom {
+  width: 100%;
+  height: 70px;
+  background-color: #3b364a;
+  bottom: 0;
+}
+
+#footerBottom div {
+  font-size: 15px;
+  color: #908aa8;
+  width: 370px;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*    If I have time
+#footerBottom div:nth-of-type(2) {
+  font-size: 13px;
+  width: 200px;
+  float: right;
+  padding-top: 0px;
+  margin-top: -30px;
+  margin-right: 15px;
+}
+
+#miniLogoContainer {
+  float: left;
+  max-width: 70px;
+  display: block;
+  background-color: yellow;
+}
+#miniP {
+  height: 30px;
+  width: 30px;
+}
+#miniS {
+  height: 30px;
+  width: 30px;
+}
+*/
+.pageContainer {
+  margin: auto;
+  display: flex;
+  width: 80%;
+}
+.pageContainer h1 {
+  display: inline-block;
+  width: 300px;
+  font-size: 100px;
+  margin: auto;
+  color: #2f2b3b;
+}
+.pageContainer #photoContainer1 {
+  width: 450px;
+  display: inline-block;
+  padding: 20px;
+  float: right;
+  margin-right: 50px;
+  margin-top: 100px;
+}
+.pageContainer .photoBG1 {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: blue;
+  text-align: center;
+  color: #d1d7e0;
+  font-size: 30px;
+}
+.pageContainer .photoBG1:nth-of-type(1) {
+  background: url(../img/gallery/artMusic.jpeg) no-repeat;
+  background-size: cover;
+  color: #000;
+}
+.pageContainer .photoBG1:nth-of-type(2) {
+  background: url(../img/gallery/coding.jpeg) no-repeat;
+  background-size: cover;
+}
+.pageContainer .photoBG1:nth-of-type(3) {
+  background: url(../img/gallery/coding2.jpeg) no-repeat;
+  background-size: cover;
+  color: #000;
+}
+.pageContainer .photoBG1:nth-of-type(4) {
+  background: url(../img/gallery/creative.jpeg) no-repeat;
+  background-size: cover;
+  color: #000;
+}
+.pageContainer .photoBG1:nth-of-type(5) {
+  background: url(../img/gallery/musicIsLife.jpg) no-repeat;
+  background-size: cover;
+}
+.pageContainer .photoBG1:nth-of-type(6) {
+  background: url(../img/gallery/think.jpeg) no-repeat;
+  background-size: cover;
+}
+.pageContainer #photoContainer2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-top: 100px;
+}
+.pageContainer #photoContainer2 .photoBG2 {
+  display: inline-block;
+  width: 48%;
+  height: 48%;
+  background-color: blue;
+  text-align: center;
+  color: #d1d7e0;
+  font-size: 50px;
+}
+.pageContainer #photoContainer2 .photoBG2:nth-of-type(1) {
+  background: url(../img/gallery/record.jpeg) no-repeat;
+  background-size: cover;
+}
+.pageContainer #photoContainer2 .photoBG2:nth-of-type(2) {
+  background: url(../img/gallery/concert.jpeg) no-repeat;
+  background-size: cover;
+}
+.pageContainer #photoContainer2 .photoBG2:nth-of-type(3) {
+  background: url(../img/gallery/design.jpeg) no-repeat;
+  background-size: cover;
+}
+.pageContainer #photoContainer2 .photoBG2:nth-of-type(4) {
+  background: url(../img/gallery/paintCup.jpeg) no-repeat;
+  background-size: cover;
+  color: #000;
+}
+.pageContainer #photoContainer3 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-top: 100px;
+}
+.pageContainer #photoContainer3 .photoBG3 {
+  display: inline-block;
+  width: 49%;
+  height: 100%;
+  background-color: blue;
+  text-align: center;
+  color: #d1d7e0;
+  font-size: 50px;
+}
+.pageContainer #photoContainer3 .photoBG3:nth-of-type(1) {
+  background: url(../img/gallery/wall.jpeg) no-repeat;
+  background-size: cover;
+  color: #000;
+}
+.pageContainer #photoContainer3 .photoBG3:nth-of-type(2) {
+  background: url(../img/gallery/record2.jpeg) no-repeat;
+  background-size: cover;
+  color: #000;
+}
+.pageContainer #photoContainer4 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  margin-top: 100px;
+}
+.pageContainer #photoContainer4 h2 {
+  text-align: center;
+  color: #d1d7e0;
+  font-size: 50px;
+}
+.pageContainer #photoContainer4 .photoBG4 {
+  display: inline-block;
+  width: 100%;
+  height: 80%;
+  background-color: blue;
+  text-align: center;
+  color: #d1d7e0;
+  font-size: 50px;
+}
+.pageContainer #photoContainer4 .photoBG4:nth-of-type(1) {
+  background: url(../img/gallery/chalk.jpeg) no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=gallery.css.map */
